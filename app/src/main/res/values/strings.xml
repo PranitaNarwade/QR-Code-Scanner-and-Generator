@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QRCodeScanner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="enter_url">Please Enter URL</string>
+    <string name="scan_success_msg">QR Code Scan Successfully</string>
+    <string name="try_again_msg">Please Try Again</string>
+    <string name="not_valid_url_msg">Not a valid URL</string>
+</resources>

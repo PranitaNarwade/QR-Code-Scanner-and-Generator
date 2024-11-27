@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GenerateCodeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_back"
+        android:layout_margin="10sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter url"
+            android:drawableLeft="@drawable/ic_link"
+            android:drawablePadding="1sp"
+            app:textInputLayoutFocusedRectEnabled="true"
+            android:background="@null"
+            android:layout_margin="10sp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_generate_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_gravity="center"
+        android:text="Generate QR Code"
+        android:textColor="@color/white"
+        android:background="#03A9F4"/>
+
+    <ImageView
+        android:id="@+id/img_qr"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_margin="10sp"
+                android:src="@drawable/ic_share"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

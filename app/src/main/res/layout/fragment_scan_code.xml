@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ScanCodeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="100sp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="15sp"
+        android:padding="10sp"
+        app:cardUseCompatPadding="true">
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        android:background="#DEF3F6">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="10sp"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:src="@drawable/ic_open_in_new"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan result will be shown here"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

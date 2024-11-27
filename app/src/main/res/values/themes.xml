@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorSurface">@color/design_default_color_surface</item>
+    </style>
+
+<!--    <style name="Theme.QRCodeScanner" parent="Base.Theme.QRCodeScanner" />-->
+</resources>
